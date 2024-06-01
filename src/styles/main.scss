@@ -24,13 +24,13 @@ body {
     font-family: Perfect Futures, sans-serif;
 }
 
-@mixin text($fontSize: 16px) {
+@mixin text($fontSize: 26px) {
     font-size: $fontSize;
     line-height: $fontSize + 10px;
     color: variaveis.$corTextoPrincipal;
 }
 
-@mixin title($fontSize: 40px) {
+@mixin title($fontSize: 60px) {
     @include text($fontSize);
     color: variaveis.$corTextoSecundario;
 }
@@ -48,7 +48,7 @@ body {
 }
 
 .title--big {
-    @include title(70px);
+    @include title(200px);
 }
 
 .title {
