@@ -4,11 +4,15 @@
         padding: 8px 36px;
         display: flex;
         justify-content: space-between;
-    }
 
-    &__logo {
-        max-width: 80px;
-        width: 100%;
+        &__principal {
+            color: rgb(0, 255, 247);
+            font-size: 2em;
+
+            &:hover {
+                color: aliceblue;
+            }
+        }
     }
 
     &__links {
