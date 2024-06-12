@@ -88,7 +88,7 @@ body {
 }
 
 .link-text {
-    @include text(38px);
+    @include text(18px);
     color: variaveis.$corTextoSecundario;
     text-decoration: underline;
     text-decoration: none;
