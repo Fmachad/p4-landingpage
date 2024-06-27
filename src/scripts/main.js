@@ -1,7 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     const buttons = document.querySelectorAll('[data-tab-button]');
     const questions = document.querySelectorAll('[data-faq-question]');
-
     const heroSection = document.querySelector('.hero');
     const alturaHero = heroSection.clientHeight;
 
@@ -21,6 +20,7 @@ function ocultaElementosDoHeader() {
     const header = document.querySelector('header');
     header.classList.add('header--is-hidden');
 }
+
 function exibeElementosDoHeader() {
     const header = document.querySelector('header');
     header.classList.remove('header--is-hidden');
@@ -33,3 +33,4 @@ function removeBotaoAtivo() {
         buttons[i].classList.remove('shows__tabs__button--is-active');
     }
 }
+

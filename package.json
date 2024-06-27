@@ -4,17 +4,21 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "sass": "sass",
+    "gulp": "gulp",
     "dev": "gulp watch",
-    "build": "gulp",
+    "build": "gulp sass",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "gulp": "^5.0.0",
+    "gulp": "^5.1.1",
     "gulp-imagemin": "^7.1.0",
     "gulp-sass": "^5.1.0",
-    "sass": "^1.77.3"
+    "gulp-uglify": "^3.0.2",
+    "sass": "^1.77.3",
+    "watch": "^1.0.2"
   }
 }
