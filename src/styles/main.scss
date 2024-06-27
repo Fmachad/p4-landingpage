@@ -20,6 +20,7 @@
 body {
     background-color: variaveis.$corDeFundo;
     font-family: Perfect Futures, sans-serif;
+
 }
 
 @mixin text($fontSize: 5px) {
@@ -43,6 +44,10 @@ body {
 
 .text--small {
     @include text(12px);
+
+    @media (max-width: 768px) {
+        @include text(8px);
+    }
 }
 
 .title--big {
@@ -71,6 +76,11 @@ body {
     border-radius: 4px;
     text-decoration: none;
     letter-spacing: 1px;
+
+    @media (max-width: 768px) {
+        font-size: 6px;
+        padding: 8px 8px;
+    }
 
     &:hover {
         background-color: lighten(variaveis.$corDeFundoBotaoPrimario, 4%);

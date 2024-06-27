@@ -17,6 +17,10 @@
         max-width: 640px;
         margin-top: 50px;
 
+        @media (max-width: 768px) {
+            max-width: 100%;
+        }
+
         .title--small {
             margin-bottom: 64px;
         }
@@ -43,6 +47,14 @@
                 width: 100%;
                 padding: 18px;
                 margin: 18px 0;
+            }
+
+            .button {
+                height: 50px;
+
+                @media (max-width: 768px) {
+                    height: auto;
+                }
             }
         }
     }
